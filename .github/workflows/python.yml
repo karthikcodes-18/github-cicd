@@ -9,15 +9,17 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-22.04
+    environment: python
 
     steps:
+      
       - name: checkout repo
         uses: actions/checkout@v4
 
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ vars.PYTHON_VERSION }}
 
 
       - name: Requirments Installation
