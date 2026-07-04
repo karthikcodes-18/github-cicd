@@ -15,3 +15,15 @@ jobs:
 
       - name: Print Date
         run: date
+
+        
+  hi-job:
+    runs-on:  ubuntu-latest
+
+    steps: 
+      - name: Print Hi
+        run: echo "HI"
+
+      - name: print background
+        run: echo "ls -al"
+    
