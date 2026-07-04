@@ -1,0 +1,17 @@
+name: Hello World CI
+
+on:
+  push:
+  workflow_dispatch:
+    
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: print Welcome
+        run: echo "welcome to GH-A"
+
+      - name: Print Date
+        run: date
