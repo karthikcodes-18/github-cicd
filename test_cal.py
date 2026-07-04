@@ -14,4 +14,4 @@ def test_div():
 
 
 def test_add1():
-  assert add(1,1)=9
+  assert add(1,1) == 9
