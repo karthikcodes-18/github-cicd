@@ -21,7 +21,7 @@ jobs:
         run: echo "second job"
 
   third-job:
-    needs: first-job
+    needs: second-job
     runs-on: ubuntu-24.04-arm
     steps:
       - name: 3rd job
