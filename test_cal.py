@@ -11,3 +11,7 @@ def test_mul():
 
 def test_div():
   assert div(20,4) == 5
+
+
+def test_add1():
+  assert add(1,1)=9
