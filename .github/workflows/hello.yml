@@ -18,6 +18,7 @@ jobs:
 
         
   hi-job:
+    needs: hello-job
     runs-on:  ubuntu-latest
 
     steps: 
